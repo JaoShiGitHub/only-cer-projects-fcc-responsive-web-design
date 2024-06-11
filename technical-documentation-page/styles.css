@@ -1,0 +1,55 @@
+body, #nav-links {
+    display: flex;
+}
+
+#nav-links {
+  flex-direction: column;
+}
+
+a,p, li {
+    color: rgb(55, 55, 55);
+    text-decoration: none;
+}
+
+body {
+    padding: 20px 20px 100px 20px;
+   
+   
+}
+#nav-header {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+header {
+    font-weight: bold;
+}
+code {
+    padding: 30px;
+    line-height: 2;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        flex-direction: column; 
+    }
+    nav {
+        margin-bottom: 30px;
+    }
+}
+
+/* @media only screen and (max-width: 1440px) {
+    body {
+        flex-direction: row;
+    }
+    nav {
+        min-width: 200px;
+        max-width: 200px;
+    }
+   
+} */
+
+nav {
+  width: 100%;
+
+}
