@@ -4,6 +4,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+#header {
+    position: fixed;
+    top: 0;
+
+}
+
+#form {
+    margin-top: 70px;
+}
 
 header, 
 img,
@@ -19,11 +28,7 @@ div > input,
     max-width: 400px;
 }
 
-header {
 
-    position: fixed;
-    top: 0;
-}
 
 h1 {
     margin-top: 0;
