@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header, 
+img,
+div > input,
+#pricing , 
+#pricing > div,
+#nav-bar,
+#nav-bar > ul  {
+    width: 100%;
+}
+
+#nav-bar {
+    max-width: 400px;
+}
+
+header {
+
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#pricing > div {
+    max-width: 314px;
+ }
+
+#pricing > div > ul {
+    padding: 0;
+ }
+
+header,
+nav,nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: static;
+}
+
+form, form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    align-items: center;
+    gap: 10px;
+}
+
+div > input {
+    max-width: 300px;
+}
+
+#submit {
+    width: 170px;
+}
+
+img {
+    max-width: 400px;
+}
