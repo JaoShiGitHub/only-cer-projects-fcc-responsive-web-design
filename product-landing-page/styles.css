@@ -3,15 +3,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-#header {
-    position: fixed;
-    top: 0;
-
-}
-
-#form {
-    margin-top: 70px;
+    gap: 20px;
+    padding: 0px 20px 40px 20px;
 }
 
 header, 
@@ -20,15 +13,23 @@ div > input,
 #pricing , 
 #pricing > div,
 #nav-bar,
-#nav-bar > ul  {
+#nav-bar > ul, footer  {
     width: 100%;
 }
 
-#nav-bar {
-    max-width: 400px;
+#form > h1 {
+    text-align: center;
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    background: white;
+}
 
+#form {
+    margin-top: 70px;
+}
 
 h1 {
     margin-top: 0;
@@ -43,10 +44,6 @@ ul {
     justify-content: center;
     text-align: center;
 }
-
-#pricing > div {
-    max-width: 314px;
- }
 
 #pricing > div > ul {
     padding: 0;
@@ -70,8 +67,16 @@ form > div {
     gap: 10px;
 }
 
-div > input {
-    max-width: 300px;
+
+footer {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#footer-links {
+    display: flex;
 }
 
 #submit {
@@ -79,5 +84,54 @@ div > input {
 }
 
 img {
+    max-width: 370px;
+    margin-left: 60px;
+}
+
+div > input {
+    max-width: 300px;
+}
+
+#pricing > div {
+    max-width: 314px;
+ }
+
+#nav-bar {
     max-width: 400px;
+}
+#nav-bar > ul {
+    padding: 0;
+    margin-right: 60px;
+}
+
+footer > p {
+    margin: 0;
+ } 
+
+@media  screen and (max-width: 750px) {
+    #pricing {
+        flex-direction: column;
+    }
+
+    #pricing {
+        align-items: center;
+    }
+
+    header, #nav-bar > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form {
+        margin-top: 180px;
+    }
+
+    img {
+        margin-left: 0;
+    }
+
+    #nav-bar > ul {
+        margin-right: 0px;
+    }
+
 }
