@@ -1,11 +1,45 @@
-@media only screen and (max-width: 1440px) {
-  
+@media only screen and (max-width: 375px) {
+    #project-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #project-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    #project-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* flex containers */
 
-#welcome-section, #navbar,body, address, footer {
+#welcome-section, #navbar, #projects, #project-list > li > a,body, address, footer, #welcome-section > div {
     display: flex;
+}
+
+/* padding left right 20px */
+
+#welcome-section, footer {
+    padding: 0 20px;
+}
+
+/* fd: column | jc: center | ai: center */
+
+#welcome-section, footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#project-list > li >a, #projects, #welcome-section > div {
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
@@ -14,8 +48,8 @@ body {
     background-color:  rgb(250, 168, 179);
     color: aliceblue;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 #navbar{
     background-color: rgb(250, 168, 179);
@@ -33,26 +67,37 @@ body {
 #welcome-section {
     background-color: rgb(35, 35, 35);
     height: 400px;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
+}
+
+#welcome-section > div {
+    gap:  13px;
+
 }
 
 #projects {
     background-color: rgb(238, 207, 211);
+    padding: 30px 20px 50px 20px ;
 }
 
 #link-list {
     margin-right: 20px;
+    text-transform: uppercase;
 }
 
 #link-list > a {
+    margin: 0 5px;
+}
+
+#link-list > a, #project-list > li > a, #project-tile {
     color: rgb(35, 35, 35);
+    text-align: center;
 }
 
 #project-list {
-    display: grid ;
+    display: grid;
+    grid-gap: 30px;
+    list-style-type: none; 
 }
 
 h1,h3 {
@@ -67,7 +112,16 @@ footer {
 
 a {
     text-decoration: none;
-    /* color: aliceblues */
+}
+
+#project-list {
+padding: 0;
+}
+
+address {
+    gap: 20px;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 address > a {
@@ -76,5 +130,6 @@ address > a {
 
 img {
     width: 100%;
-    max-width: 200px;
+    max-width: 370px;
 }
+
